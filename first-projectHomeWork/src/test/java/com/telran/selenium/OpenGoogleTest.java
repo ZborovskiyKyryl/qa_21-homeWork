@@ -10,7 +10,7 @@ public class OpenGoogleTest {
     @Test
     public void setUp(){
         driver = new ChromeDriver();
-        driver.get("https://google.com");
+        driver.get("https://en.wikipedia.org");
         driver.findElement(By.name("q")).sendKeys("java");
         //driver.navigate().to();
         try {
