@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-projectHomeWork.iml" filepath="$PROJECT_DIR$/.idea/modules/first-projectHomeWork.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-projectHomeWork.main.iml" filepath="$PROJECT_DIR$/.idea/modules/first-projectHomeWork.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-projectHomeWork.test.iml" filepath="$PROJECT_DIR$/.idea/modules/first-projectHomeWork.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qa_21-homeWork.iml" filepath="$PROJECT_DIR$/.idea/modules/qa_21-homeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoginToWiki/qa_21-homeWork.LoginToWiki.iml" filepath="$PROJECT_DIR$/.idea/modules/LoginToWiki/qa_21-homeWork.LoginToWiki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoginToWiki/qa_21-homeWork.LoginToWiki.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LoginToWiki/qa_21-homeWork.LoginToWiki.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LoginToWiki/qa_21-homeWork.LoginToWiki.test.iml" filepath="$PROJECT_DIR$/.idea/modules/LoginToWiki/qa_21-homeWork.LoginToWiki.test.iml" />
     </modules>
   </component>
 </project>
