@@ -6,25 +6,11 @@ import org.testng.annotations.Test;
 public class LoginToEbay extends  TestBase{
     @Test
     public void logInTest(){
-        driver.get("https://ebay.com");
-
-        click(By.id("gh-ug"));
-        //
-        click(By.id("userid"));
-        driver.findElement(By.id("userid")).clear();
-        driver.findElement(By.id("userid")).sendKeys("adfgdfg@ghghg.com");
-
-        click(By.id("pass"));
-        driver.findElement(By.id("pass")).clear();
-        driver.findElement(By.id("pass")).sendKeys("123456789");
-
-        click(By.id("sgnBt"));
-
-
+        openSite("https://ebay.com");
+        initLogin();
+        fillLoginForm("adfgdfg@ghghg.com", "123456789");
+        clickLoginButton();
     }
 
-    public void click(By locator) {
-        driver.findElement(locator).click();
-    }
 
 }

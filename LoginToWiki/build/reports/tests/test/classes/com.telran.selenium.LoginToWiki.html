@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class com.telran.selenium.LoginToEbay</title>
+<title>Test results - Class com.telran.selenium.LoginToWiki</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class com.telran.selenium.LoginToEbay</h1>
+<h1>Class com.telran.selenium.LoginToWiki</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/com.telran.selenium.html">com.telran.selenium</a> &gt; LoginToEbay</div>
+<a href="../packages/com.telran.selenium.html">com.telran.selenium</a> &gt; LoginToWiki</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -35,13 +35,13 @@
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.511s</div>
+<div class="counter">17.700s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,41 +73,81 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="logInTest"></a>
-<h3 class="failures">logInTest</h3>
+<a name="setUp"></a>
+<h3 class="failures">setUp</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+<pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
   (Session info: chrome=76.0.3809.100)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WINDOWS-GUHJOJ3', ip: '10.0.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a806393082a39a65106cc924d5e780b8
-*** Element info: {Using=id, value=gh-ug}
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00E27C53+1473619]
+	Ordinal0 [0x00DAAD71+961905]
+	Ordinal0 [0x00D3415C+475484]
+	Ordinal0 [0x00D2DAEA+449258]
+	Ordinal0 [0x00D2E188+450952]
+	Ordinal0 [0x00D2F295+455317]
+	Ordinal0 [0x00D2B495+439445]
+	Ordinal0 [0x00D34F10+478992]
+	Ordinal0 [0x00CE98FE+170238]
+	Ordinal0 [0x00CE8D1D+167197]
+	Ordinal0 [0x00CE742B+160811]
+	Ordinal0 [0x00CD0AE6+68326]
+	Ordinal0 [0x00CD1BF0+72688]
+	Ordinal0 [0x00CD1B89+72585]
+	Ordinal0 [0x00DC4B37+1067831]
+	GetHandleVerifier [0x00EC6845+506677]
+	GetHandleVerifier [0x00EC65E0+506064]
+	GetHandleVerifier [0x00ECD188+533624]
+	GetHandleVerifier [0x00EC701A+508682]
+	Ordinal0 [0x00DBC226+1032742]
+	Ordinal0 [0x00DBC09F+1032351]
+	Ordinal0 [0x00DC6A4B+1075787]
+	Ordinal0 [0x00DC6BB3+1076147]
+	Ordinal0 [0x00DC5B65+1071973]
+	BaseThreadInitThunk [0x761F6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77227A94+228]
+	RtlGetAppContainerNamedObjectPath [0x77227A64+180]
+
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.telran.selenium.TestBase.click(TestBase.java:32)
-	at com.telran.selenium.TestBase.initLogin(TestBase.java:50)
-	at com.telran.selenium.LoginToEbay.logInTest(LoginToEbay.java:10)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.telran.selenium.TestBase.setUp(TestBase.java:12)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:510)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
@@ -170,8 +210,13 @@ Session ID: a806393082a39a65106cc924d5e780b8
 </tr>
 </thead>
 <tr>
-<td class="failures">logInTest</td>
-<td class="failures">6.511s</td>
+<td class="skipped">loginToWiki</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="failures">setUp</td>
+<td class="failures">17.700s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -179,12 +224,11 @@ Session ID: a806393082a39a65106cc924d5e780b8
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 34227
+<pre>Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 14706
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1566836085.915][WARNING]: Timed out connecting to Chrome, retrying...
-Aug 26, 2019 7:14:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
+[1566832463.074][WARNING]: Timed out connecting to Chrome, retrying...
+[1566832467.074][WARNING]: Timed out connecting to Chrome, retrying...
 </pre>
 </span>
 </div>
@@ -196,7 +240,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.2.1</a> at Aug 26, 2019, 7:14:55 PM</p>
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at Aug 26, 2019, 6:14:35 PM</p>
 </div>
 </div>
 </body>

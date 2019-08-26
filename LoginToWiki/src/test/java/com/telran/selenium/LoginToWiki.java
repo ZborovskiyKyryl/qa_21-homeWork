@@ -10,9 +10,7 @@ public class LoginToWiki extends TestBase {
         driver.get("https://en.wikipedia.org");
 
         click(By.id("pt-login"));
-        click(By.name("wpName"));
-        driver.findElement(By.name("wpName")).clear();
-        driver.findElement(By.name("wpName")).sendKeys("chachacha");
+        type(By.name("wpName"));
 
         click(By.name("wpPassword"));
         driver.findElement(By.name("wpPassword")).clear();
@@ -22,6 +20,12 @@ public class LoginToWiki extends TestBase {
         click(By.name("wploginattempt"));
 
 
+    }
+
+    public void type(By locator) {
+        click(locator);
+        driver.findElement(By.name("wpName")).clear();
+        driver.findElement(By.name("wpName")).sendKeys("chachacha");
     }
 
     public void click(By locator) {
